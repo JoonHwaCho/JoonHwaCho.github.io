@@ -1,0 +1,100 @@
+@font-face {
+  font-family: KoddiUDOnGothic;
+  src: url("./webfonts\(EOT\,\ WOFF\,\ WOFF2\)\ 파일/") format("woff2");
+}
+* {
+  font-family: KoddiUDOnGothic;
+}
+
+div {
+  /* border: 1px solid black; */
+  margin: 2rem;
+  padding: 5rem;
+  text-align: center;
+  line-height: 2rem;
+}
+select {
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  color: #333;
+}
+label {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+}
+audio {
+  position: absolute;
+  top: calc(18% + 40px); /* 선택한 값에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add media query for mobile */
+@media screen and (max-width: 480px) {
+  label {
+    display: none;
+    /* position: absolute;
+    top: 8%;
+    left: 10%; */
+  }
+  select {
+    position: absolute;
+    text-align: center;
+    top: 17%;
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 0.1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    color: #333;
+  }
+  audio {
+    position: absolute;
+    top: calc(18% + 40px); /* 선택한 값에 따라 조정 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+  div {
+    /* background-color: aliceblue; */
+    margin: 2rem;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    margin-top: 30%; /* Add this */
+  }
+  #content {
+    font-size: 0.8rem;
+  }
+  h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
